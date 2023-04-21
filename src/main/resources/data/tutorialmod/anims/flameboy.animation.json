@@ -1,0 +1,88 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.run": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"left_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, "0-4"]
+						},
+						"0.125": {
+							"vector": [-34, 0, "0-4"]
+						},
+						"0.375": {
+							"vector": [34, 0, -4]
+						},
+						"0.5": {
+							"vector": [0, 0, -4]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 4]
+						},
+						"0.125": {
+							"vector": [34, 0, 4],
+							"easing": "linear"
+						},
+						"0.375": {
+							"vector": [-34, 0, 4],
+							"easing": "linear"
+						},
+						"0.5": {
+							"vector": [0, 0, 4]
+						}
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [34, 0, 0]
+						},
+						"0.375": {
+							"vector": ["0-34", 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					},
+					"scale": {
+						"vector": [1, 1, 1]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": ["0-34", 0, 0]
+						},
+						"0.375": {
+							"vector": [34, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
