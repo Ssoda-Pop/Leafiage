@@ -1,6 +1,7 @@
 package net.ZakiChel.tutorialmod;
 
 import net.ZakiChel.tutorialmod.block.ModBlocks;
+import net.ZakiChel.tutorialmod.block.entity.ModBlockEntities;
 import net.ZakiChel.tutorialmod.entity.client.FlameBoyRenderer;
 import net.ZakiChel.tutorialmod.entity.custom.ModEntityTypes;
 import net.ZakiChel.tutorialmod.item.ModItems;
@@ -39,6 +40,7 @@ public class TutorialMod
         ModParticles.register(eventBus);
         ModEntityTypes.register(eventBus);
         GeckoLib.initialize();
+        ModBlockEntities.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void clientSetup(final FMLCommonSetupEvent event){

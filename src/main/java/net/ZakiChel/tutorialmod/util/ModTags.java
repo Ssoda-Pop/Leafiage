@@ -21,6 +21,7 @@ public class ModTags {
     public static class Items {
 
             public static final TagKey<Item> TITANIUM_INGOT = createForgeTag("ingots/titanium");
+        public static final TagKey<Item> MASHABLE = createForgeTag("mashable");
 
         private static TagKey<Item> createTag(String name){
             return ItemTags.create(new ResourceLocation(TutorialMod.MOD_ID, name));

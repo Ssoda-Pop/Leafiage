@@ -35,6 +35,8 @@ public class ModItems {
             () -> new Hassaikai(Tiers.NETHERITE, 7, -3.4f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> MURAKUMOGIRI = ITEMS.register("murakumogiri",
             () -> new Hassaikai(Tiers.NETHERITE, 7, -3.4f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+    public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
 
 
