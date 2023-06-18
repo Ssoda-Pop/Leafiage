@@ -1,6 +1,7 @@
 package net.ZakiChel.tutorialmod.block;
 
 import net.ZakiChel.tutorialmod.TutorialMod;
+import net.ZakiChel.tutorialmod.block.custom.BowlNBonker;
 import net.ZakiChel.tutorialmod.block.entity.custom.BowlNBonkerBlockEntity;
 import net.ZakiChel.tutorialmod.item.ModCreativeModeTab;
 import net.ZakiChel.tutorialmod.item.ModItems;
@@ -33,7 +34,7 @@ public class ModBlocks {
             ()-> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.VEGETABLE, MaterialColor.COLOR_ORANGE).strength(1.0F).sound(SoundType.WOOD).lightLevel((p_187437_) -> {
                 return 15;}).noOcclusion()  ));
     public static final RegistryObject<Block> BOWL_N_BONKER = registerBlock("bowl_n_bonker",
-            ()-> new BowlNBonkerBlockEntity(BlockBehaviour.Properties.of(Material.WOOD).strength(4f).destroyTime(4).sound(SoundType.WOOD).noOcclusion()));
+            () -> new BowlNBonker(BlockBehaviour.Properties.of(Material.WOOD).strength(4f).destroyTime(4).sound(SoundType.WOOD).noOcclusion()));
 
 
 
