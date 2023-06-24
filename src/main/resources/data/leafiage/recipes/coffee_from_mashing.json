@@ -1,0 +1,5 @@
+{
+  "type": "leafiage:mashing",
+  "ingrediants" :[{"item": "leafiage:coffee_beans"}],
+  "output":{"item":"leafiage:coffee_powder"}
+}
