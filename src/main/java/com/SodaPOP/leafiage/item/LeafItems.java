@@ -1,6 +1,8 @@
 package com.SodaPOP.leafiage.item;
 
 import com.SodaPOP.leafiage.Leafiage;
+import com.SodaPOP.leafiage.block.LeafBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +20,8 @@ public class LeafItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COFFEE_POWDER = ITEMS.register("coffee_powder",
             ()-> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar",
+            ()-> new BlockItem(LeafBlocks.MORTAR.get(),new Item.Properties()));
 
 
 

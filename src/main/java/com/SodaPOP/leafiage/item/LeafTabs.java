@@ -22,7 +22,7 @@ public class LeafTabs {
                     .icon(()-> new ItemStack(LeafItems.COFFEE_BEANS.get())).displayItems((t,item)->{
                         item.accept(LeafItems.COFFEE_BEANS.get());
                         item.accept(LeafItems.COFFEE_POWDER.get());
-                        item.accept((LeafBlocks.MORTAR.get()));
+                        item.accept((LeafItems.MORTAR.get()));
                     }).build());
 
     public static void register(IEventBus eventBus) {
