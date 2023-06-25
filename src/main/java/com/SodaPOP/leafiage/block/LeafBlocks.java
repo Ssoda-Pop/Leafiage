@@ -1,9 +1,8 @@
 package com.SodaPOP.leafiage.block;
 
 import com.SodaPOP.leafiage.Leafiage;
-import com.SodaPOP.leafiage.block.custom.Mortar;
+import com.SodaPOP.leafiage.block.custom.MortarBlock;
 import com.SodaPOP.leafiage.item.LeafItems;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -11,7 +10,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.client.model.obj.ObjMaterialLibrary;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,7 +21,7 @@ public class LeafBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Leafiage.MODID);
     public static final RegistryObject<Block> MORTAR = BLOCKS.register("mortar",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(4f).destroyTime(4).sound(SoundType.WOOD).noOcclusion()));
+            () -> new MortarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(4f).destroyTime(4).sound(SoundType.WOOD).noOcclusion()));
 
 
 

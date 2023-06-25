@@ -1,8 +1,19 @@
 {
   "variants": {
-    "facing=north": {"model": "leafiage:block/mortar"},
-    "facing=south": {"model": "leafiage:block/mortar", "y":90},
-    "facing=east": {"model": "leafiage:block/mortar", "y":180},
-    "facing=west": {"model": "leafiage:block/mortar", "y":270}
+    "facing=north": {
+      "model": "leafiage:block/mortar"
+    },
+    "facing=south": {
+      "model": "leafiage:block/mortar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "leafiage:block/mortar",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "leafiage:block/mortar",
+      "y": 90
+    }
   }
 }
