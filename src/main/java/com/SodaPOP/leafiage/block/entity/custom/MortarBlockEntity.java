@@ -6,7 +6,6 @@ import com.SodaPOP.leafiage.recipe.MortarRecipe;
 import com.SodaPOP.leafiage.screen.MortarMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.RegistryAccess;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -25,7 +24,6 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
@@ -125,8 +123,13 @@ public class MortarBlockEntity extends BlockEntity implements MenuProvider {
 
     if(hasRecipe(entity)){
         entity.itemHandler.extractItem(1,1,false);
+        if(entity.itemHandler.getStackInSlot(4).isEmpty()){
+            entity.itemHandler.setStackInSlot(4,new ItemStack(recipe.get().getResultItem(null).getItem(), 1));
+        }
+        else{
         entity.itemHandler.setStackInSlot(4,new ItemStack(recipe.get().getResultItem(null).getItem(),
                 entity.itemHandler.getStackInSlot(4).getCount() + 1));
+        }
     }
     }
 

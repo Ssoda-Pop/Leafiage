@@ -10,11 +10,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
-public class MortarScreen extends AbstractContainerScreen {
+public class MortarScreen extends AbstractContainerScreen<MortarMenu> {
     public static final ResourceLocation TEXTURE =
             new ResourceLocation(Leafiage.MODID,"textures/gui/mortar_gui.png");
     public MortarScreen(AbstractContainerMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
-        super(pMenu, pPlayerInventory, pTitle);
+        super((MortarMenu) pMenu, pPlayerInventory, pTitle);
     }
 
     @Override

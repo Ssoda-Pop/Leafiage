@@ -93,7 +93,7 @@ public class MortarBlock extends BaseEntityBlock {
     }
     @Nullable
     @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+    public <T extends BlockEntity> BlockEntityTicker getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
         return createTickerHelper(pBlockEntityType, LeafBlockEntities.MORTAR_BLOCK_ENTITY.get(),
                 MortarBlockEntity::tick);
     }

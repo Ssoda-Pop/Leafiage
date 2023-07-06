@@ -30,11 +30,11 @@ public class MortarMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addHotbar(inv);
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler,0,42,16));
-                    this.addSlot(new SlotItemHandler(iItemHandler,1,42,54));
-                    this.addSlot(new SlotItemHandler(iItemHandler,2,23,35));
-                    this.addSlot(new SlotItemHandler(iItemHandler,3,61,35));
-                    this.addSlot(new SlotItemHandler(iItemHandler,4,121,35));
+            this.addSlot(new SlotItemHandler(iItemHandler,0,43,17));
+                    this.addSlot(new SlotItemHandler(iItemHandler,1,43,55));
+                    this.addSlot(new SlotItemHandler(iItemHandler,2,24,36));
+                    this.addSlot(new SlotItemHandler(iItemHandler,3,62,36));
+                    this.addSlot(new SlotItemHandler(iItemHandler,4,122,36));
         });
         }
 

@@ -6,8 +6,10 @@ import com.SodaPOP.leafiage.item.LeafItems;
 import com.SodaPOP.leafiage.item.LeafTabs;
 import com.SodaPOP.leafiage.recipe.LeafRecipes;
 import com.SodaPOP.leafiage.screen.LeafMenuTypes;
+import com.SodaPOP.leafiage.screen.MortarScreen;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +40,7 @@ public class Leafiage
         LeafRecipes.register(modEventBus);
         LeafMenuTypes.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -62,6 +65,7 @@ public class Leafiage
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(LeafMenuTypes.MORTAR_MENU.get(), MortarScreen::new );
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
